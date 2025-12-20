@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+/* ———————————— DESIGN TOKENS ———————————— */
+:root {
+    /* Colors */
+    --color-bg: #0f0f0f;
+    --color-bg-card: #0a0a0a;
+    --color-text: #787888;
+
+    --color-decor: #1a1a1a;
+
+    --color-btn: #3d3d3d;
+    --color-btn-hover: #787888;
+    --color-favorite: #904d8f;
+    --color-favorite-hover: #a33ea1;
+
+    --color-link: #787888;
+    --color-link-hover: #9d9db2;
+
+    --color-error: #741616;
+    --color-scroll-thumb: #787888;
+    --color-scroll-track: #131313;
+
+    /* Fonts */
+    --ff-base: "Inter", sans-serif;
+    --ff-accent: "Playfair", serif;
+
+    /* Typography */
+    --fs-xl: 2.75rem; /* Main quote */
+    --fs-lg: 2rem; /* H1 */
+    --fs-md: 1.5rem; /* Card text */
+    --fs-base: 1rem; /* Body */
+
+    /* Spacing */
+    --sp-0: 0;
+    --sp-xs: 0.5rem;
+    --sp-sm: 1rem;
+    --sp-md: 1.5rem;
+    --sp-lg: 2rem;
+    --sp-xl: 3rem;
+    --sp-xxl: 4rem;
+
+    /* UI */
+    --radius: 0.5rem;
+    --size-icon: 32px;
+    --size-icon-stroke: 3px;
+    --size-scroll: 10px;
+
+    /* Animation */
+    --transition:
+        opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease,
+        border-color 0.3s ease, color 0.3s ease, stroke 0.3s ease,
+        fill 0.3s ease;
+}
+
+/* ———————————— RESET & GLOBAL ———————————— */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+/* Global: Scrollbar */
+::-webkit-scrollbar {
+    width: var(--size-scroll);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-scroll-track);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll-thumb);
+    border-radius: 20px;
+    border: 3px solid var(--color-scroll-track);
+}
+
+/* Global: Body */
+html {
+    font-family: var(--ff-base);
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
+}
+
+/* ———————————— UTILITIES ———————————— */
+.is-hidden {
+    display: none !important;
+}
+
+/* ———————————— COMPONENTS ———————————— */
+
+/* Block: Link */
+.link {
+    color: var(--color-link);
+    text-decoration: none;
+    border-bottom: none;
+    transition: var(--transition);
+}
+
+.link:hover {
+    color: var(--color-link-hover);
+}
+
+/* Block: Card */
+.card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    padding: var(--sp-xl) var(--sp-xl);
+}
+
+/* Block: Icon (base) */
+.icon {
+    width: var(--size-icon);
+    height: var(--size-icon);
+    overflow: visible;
+}
+
+/* Icon paths base state (controlled via button states only) */
+.icon path {
+    stroke-width: var(--size-icon-stroke);
+    stroke: var(--color-btn);
+    fill: none;
+    transition: var(--transition);
+}
+
+/* Modifier: Favorite / Generate Icon size only */
+.icon--favorite,
+.icon--generate {
+    width: 32px;
+    height: 32px;
+}
+
+/* Modifier*/
+.icon--favorites {
+    width: 32px;
+    height: 32px;
+}
+
+.icon--favorites path {
+    fill: var(--color-decor);
+    stroke: var(--color-decor);
+}
+
+.icon--delete {
+    width: 46px;
+    height: 32px;
+}
+
+.icon--delete path {
+    stroke: var(--color-decor);
+    stroke-width: 2px;
+}
+
+/* Block: Btn */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--sp-sm);
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    color: var(--color-btn);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: var(--color-btn-hover);
+}
+
+.btn:hover .icon path {
+    stroke: var(--color-btn-hover);
+}
+
+.is-favorite path {
+    stroke: var(--color-favorite);
+    fill: var(--color-favorite);
+}
+
+.is-favorite:hover .icon path {
+    stroke: var(--color-favorite-hover);
+    fill: var(--color-favorite-hover);
+}
+
+.icon--delete path {
+    stroke-width: var(--size-icon-stroke);
+}
+
+/* ———————————— LAYOUT ———————————— */
+
+/* Block: App */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    padding: var(--sp-md) var(--sp-xl);
+    gap: var(--sp-sm);
+}
+
+.app__logo,
+.app__header {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-lg);
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.app__error {
+    top: 3.2rem;
+    left: 5rem;
+    color: var(--color-error);
+    font-weight: 500;
+}
+.first-screen__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90dvh;
+    gap: var(--sp-sm);
+}
+
+/* Block: Quotes (Main container) */
+.quotes {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: var(--sp-sm);
+}
+
+/* Element: Active Quote Item */
+.quotes__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.quotes__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: var(--sp-md);
+}
+
+.quotes__text {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-lg);
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.quotes__id,
+.quotes__author {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Element: Btn Wrapper */
+.btn__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--sp-xs);
+}
+
+/* Block: Favorites (Sidebar) */
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: var(--sp-md);
+}
+
+.favorites__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-md);
+    width: 100%;
+}
+
+/* Block: Quote Card (List item) */
+.quote-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--sp-0);
+    padding: var(--sp-lg);
+    background: transparent;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-decor);
+    transition: var(--transition);
+}
+
+/* Card hover: only border, icons react to button hover */
+.quote-card:hover .icon--delete path {
+    stroke: var(--color-btn);
+}
+
+/* Optional: stronger focus on delete icon when its button hovered */
+.quote-card__btn:hover .icon--delete path {
+    stroke: var(--color-btn-hover);
+}
+
+.quote-card__text {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-md);
+    line-height: 130%;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.quote-card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.quote-card__info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--fs-base);
+}
+
+.quote-card__author,
+.quote-card__id {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    color: var(--color-text);
+}
+
+.quote-card__id {
+    color: var(--color-decor);
+}
+
+/* Block: Contacts */
+.contacts {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-sm);
+}
+
+.contacts__group {
+    display: flex;
+    gap: var(--sp-sm);
+}
+
+.app__logo--contacts {
+    font-size: var(--fs-md);
+}

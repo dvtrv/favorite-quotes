@@ -1,39 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favorite Quotes</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-  </head>
-  <body>
-    <main class="container">
-      <section class="quotes-section">
-        <p class="error-message dn" role="alert"></p>
-        <h1 class="header">Favorite Quotes</h1>
-        <div class="quote-wrapper">
-          <p class="quote-text">Click "Generate quote", please</p>
-          <p class="quote-author">and you'll see the magic!</p>
-        </div>
-        <div class="btns-wrapper">
-          <button class="btn primary-btn generate-btn">Generate quote</button>
-          <button class="btn secondary-btn dn favorite-btn">
-            <svg class="favorite-icon" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3.9873 3.45801C6.20325 1.39713 9.93428 1.49377 12.2773 3.92578L14.5566 6.2959L15.999 7.7959L17.4404 6.2959L19.7168 3.92773C21.9861 1.57263 25.5602 1.40592 27.8008 3.27246L28.0127 3.45996C29.2397 4.60079 29.9476 6.16456 29.9971 7.89355C30.0435 9.6238 29.4216 11.2294 28.2598 12.4375L16 25.1797L3.73926 12.4375L3.73828 12.4365L3.52637 12.2051C2.49983 11.0274 1.95768 9.51499 2.00293 7.89062V7.88965C2.04704 6.27335 2.67125 4.7972 3.76172 3.67871L3.98633 3.45996L3.9873 3.45801Z"
-              />
-            </svg>
-          </button>
-        </div>
-      </section>
-      <section class="favorite-section dn">
-        <h2 class="header">Your favorite quotes</h2>
-        <ul class="cards-wrapper">
-          <!-- <li class="fav-card"></li> -->
-        </ul>
-      </section>
-    </main>
-    <script type="module" src="./App.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favorite Quotes</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main class="app">
+            <section class="quotes current-quote__section">
+                <div class="first-screen__wrapper">
+                    <h1 class="app__header app__logo">Favourite Quotes</h1>
+                    <!-- QURRENT QUOTE CARD ======================== -->
+                    <div class="quotes__item card">
+                        <p class="quotes__id current-quote__id"></p>
+                        <div class="quotes__content">
+                            <p class="quotes__text current-quote__text"></p>
+                            <p class="quotes__author current-quote__author"></p>
+                        </div>
+
+                        <div class="btn__wrapper">
+                            <!-- BTN: GENERATE -->
+                            <button
+                                class="btn btn--generate"
+                                type="button"
+                                aria-label="Generate new quote"
+                            >
+                                <svg
+                                    class="icon icon--generate"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                >
+                                    <path d="M26.9998 3V11L18.9998 11" />
+                                    <path
+                                        d="M26.3945 9.99999C24.3197 6.41319 20.4416 4 15.9999 4C9.37256 4 4 9.37257 4 16C4 22.6274 9.37256 27.9999 15.9999 27.9999C21.77 27.9999 26.5889 23.9274 27.7391 18.5"
+                                    />
+                                </svg>
+                            </button>
+
+                            <!-- BTN: FAVORITE -->
+                            <button
+                                class="btn btn--favorite"
+                                type="button"
+                                aria-label="Add to favorites"
+                            >
+                                <svg
+                                    class="icon icon--favorite"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M4.2973 5.78342C6.98646 3.22684 11.3406 3.44485 14.0035 6.27081L15.9988 8.39156L17.9923 6.27169C20.655 3.447 25.0089 3.22816 27.702 5.78342C29.1258 7.13608 29.9407 8.99174 29.9972 11.0093C30.0509 13.0281 29.3369 14.9318 27.9891 16.3644C26.6413 17.797 16.0552 28 16.0552 28C16.0552 28 5.36153 17.7972 4.01104 16.3644C2.66055 14.9317 1.94788 13.0279 2.00297 11.0075C2.05676 8.99267 2.87199 7.13621 4.2973 5.78342Z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAVORITES LIST ======================== -->
+                <aside class="favorites card">
+                    <svg
+                        class="icon icon--favorites"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                    >
+                        <path
+                            d="M4.2973 5.78342C6.98646 3.22684 11.3406 3.44485 14.0035 6.27081L15.9988 8.39156L17.9923 6.27169C20.655 3.447 25.0089 3.22816 27.702 5.78342C29.1258 7.13608 29.9407 8.99174 29.9972 11.0093C30.0509 13.0281 29.3369 14.9318 27.9891 16.3644C26.6413 17.797 16.0552 28 16.0552 28C16.0552 28 5.36153 17.7972 4.01104 16.3644C2.66055 14.9317 1.94788 13.0279 2.00297 11.0075C2.05676 8.99267 2.87199 7.13621 4.2973 5.78342Z"
+                        />
+                    </svg>
+
+                    <ul class="favorites__list">
+                        <!--<li class="favorites__list-item quote-card">
+                            <p class="quote-card__text">
+                                “I have six locks on my door all in a row. When
+                                I go out, I lock every other one. I figure no
+                                matter how long somebody stands there picking
+                                the locks, they are always locking three.”
+                            </p>
+
+                            <div class="quote-card__info">
+                                <div class="quote-card__info-wrapper">
+                                    <p class="quote-card__author">
+                                        — Elayne Boosler
+                                    </p>
+                                    <p class="quote-card__id">#987</p>
+                                </div>
+                                <button
+                                    class="quote-card__btn btn btn--delete"
+                                    type="button"
+                                    aria-label="Delete quote"
+                                >
+                                    <svg
+                                        class="icon icon--delete"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 46 32"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M19.9928 11.0333L29.9046 21.0809"
+                                        />
+                                        <path
+                                            d="M30.0405 11.0333L20.1287 21.0809"
+                                        />
+                                        <path
+                                            d="M12.5976 4.78003C12.9762 4.28818 13.5617 4 14.1824 4H37.0833C38.1879 4 39.0833 4.89543 39.0833 6V26.1143C39.0833 27.2189 38.1879 28.1143 37.0833 28.1143H14.1824C13.5617 28.1143 12.9762 27.8261 12.5976 27.3343L4.85574 17.2771C4.30217 16.558 4.30217 15.5563 4.85574 14.8372L12.5976 4.78003Z"
+                                        />
+                                    </svg>
+                                </button>
+                            </div></li>-->
+                    </ul>
+                </aside>
+            </section>
+
+            <!-- CONTACTS ======================== -->
+            <footer class="contacts card">
+                <a
+                    class="contacts__header-link link app__logo app__logo--contacts"
+                    href="https://t.me/dvtrv"
+                >
+                    Favourite Quotes
+                </a>
+
+                <div class="contacts__group">
+                    <p class="contacts__item">
+                        <a class="contacts__link link" href="https://t.me/dvtrv"
+                            >@dvtrv</a
+                        >
+                    </p>
+
+                    <p class="contacts__item">
+                        <a
+                            class="contacts__link link"
+                            href="https://t.me/dcnstrctr"
+                            >@deconstructor</a
+                        >
+                    </p>
+                </div>
+            </footer>
+
+            <!-- ERROR MESSAGE ======================== -->
+            <p class="app__error is-hidden" role="alert">app__error</p>
+        </main>
+
+        <script type="module" src="./App.js"></script>
+    </body>
 </html>

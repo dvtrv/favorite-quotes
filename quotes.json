@@ -1,0 +1,522 @@
+[
+  {
+    "id": "k9f3x2a1",
+    "author": "Abraham Lincoln",
+    "quote": "No man has a good enough memory to be a successful liar."
+  },
+  {
+    "id": "q7n8p4z2",
+    "author": "Albert Einstein",
+    "quote": "When you are courting a nice girl an hour seems like a second. When you sit on a red-hot cinder a second seems like an hour. That's relativity."
+  },
+  {
+    "id": "m2d7c9w3",
+    "author": "Alexander Woollcott",
+    "quote": "Everything I like is either illegal, immoral or fattening."
+  },
+  {
+    "id": "b6t1v0s4",
+    "author": "Alfred Hitchcock",
+    "quote": "Television has brought back murder into the home - where it belongs."
+  },
+  {
+    "id": "z4r1k8y5",
+    "author": "Alice Roosevelt Longworth",
+    "quote": "If you haven't got anything nice to say about anybody, come sit next to me."
+  },
+  {
+    "id": "p3c9h2u6",
+    "author": "Anthony Burgess",
+    "quote": "Laugh and the world laughs with you, snore and you sleep alone."
+  },
+  {
+    "id": "n8s4e1j7",
+    "author": "Arthur C. Clarke",
+    "quote": "The best measure of a man's honesty isn't his income tax return. It's the zero adjust on his bathroom scale."
+  },
+  {
+    "id": "f1v6b3q8",
+    "author": "Benjamin Franklin",
+    "quote": "Wine is constant proof that God loves us and loves to see us happy."
+  },
+  {
+    "id": "w7k2m9d1",
+    "author": "Bill Copeland",
+    "quote": "After all is said and done, sit down."
+  },
+  {
+    "id": "u5x9c1t3",
+    "author": "Bill Moyers",
+    "quote": "I own and operate a ferocious ego."
+  },
+  {
+    "id": "c2h8z4p6",
+    "author": "Bill Vaughan",
+    "quote": "The tax collector must love poor people, he's creating so many of them."
+  },
+  {
+    "id": "y9m3r6k2",
+    "author": "Bill Watterson",
+    "quote": "Reality continues to ruin my life."
+  },
+  {
+    "id": "h4d2n7x5",
+    "author": "Billy Connolly",
+    "quote": "My definition of an intellectual is someone who can listen to the William Tell Overture without thinking of the Lone Ranger."
+  },
+  {
+    "id": "s6p1f8c9",
+    "author": "Buddy Hackett",
+    "quote": "As a child my family's menu consisted of two choices: take it or leave it."
+  },
+  {
+    "id": "j3v9k1w4",
+    "author": "Casey Stengel",
+    "quote": "All right everyone, line up alphabetically according to your height."
+  },
+  {
+    "id": "r8b2q5m7",
+    "author": "Clint Eastwood",
+    "quote": "They say marriages are made in Heaven. But so is thunder and lightning."
+  },
+  {
+    "id": "t1k7z9h3",
+    "author": "Dave Barry",
+    "quote": "The four building blocks of the universe are fire, water, gravel and vinyl."
+  },
+  {
+    "id": "x9c4m2p8",
+    "author": "Don Marquis",
+    "quote": "Procrastination is the art of keeping up with yesterday."
+  },
+  {
+    "id": "v2n5d7s1",
+    "author": "Don Marquis",
+    "quote": "An idea isn't responsible for the people who believe in it."
+  },
+  {
+    "id": "g5h1q8z4",
+    "author": "Douglas Adams",
+    "quote": "I love deadlines. I like the whooshing sound they make as they fly by."
+  },
+  {
+    "id": "a1m8k4v6",
+    "author": "E. B. White",
+    "quote": "Prejudice is a great time saver. You can form opinions without having to get the facts."
+  },
+  {
+    "id": "d7p3x1n9",
+    "author": "Elayne Boosler",
+    "quote": "I have six locks on my door all in a row. When I go out, I lock every other one. I figure no matter how long somebody stands there picking the locks, they are always locking three."
+  },
+  {
+    "id": "l6z2c9h5",
+    "author": "Elbert Hubbard",
+    "quote": "Do not take life too seriously. You will never get out of it alive."
+  },
+  {
+    "id": "e4q9v1k7",
+    "author": "Eldridge Cleaver",
+    "quote": "Too much agreement kills a chat."
+  },
+  {
+    "id": "i9b5m3t2",
+    "author": "Ellen DeGeneres",
+    "quote": "People always ask me, 'Were you funny as a child?' Well, no, I was an accountant."
+  },
+  {
+    "id": "o2x7h6w1",
+    "author": "Ellen DeGeneres",
+    "quote": "My grandmother started walking five miles a day when she was sixty. She's ninety-seven now, and we don't know where the hell she is."
+  },
+  {
+    "id": "k8d1s4z9",
+    "author": "Elon Musk",
+    "quote": "I would like to die on Mars. Just not on impact."
+  },
+  {
+    "id": "q5m2v7c4",
+    "author": "Emo Philips",
+    "quote": "I was the kid next door's imaginary friend."
+  },
+  {
+    "id": "m1h6k9p3",
+    "author": "Erma Bombeck",
+    "quote": "Guilt: the gift that keeps on giving."
+  },
+  {
+    "id": "b9t3d1x6",
+    "author": "Fran Lebowitz",
+    "quote": "Food is an important part of a balanced diet."
+  },
+  {
+    "id": "z2v8q4n1",
+    "author": "Frank Sinatra",
+    "quote": "I'm for whatever gets you through the night."
+  },
+  {
+    "id": "p7c1k5h9",
+    "author": "Franklin P. Jones",
+    "quote": "One advantage of talking to yourself is that you know at least somebody's listening."
+  },
+  {
+    "id": "n4x9m2d7",
+    "author": "George Bernard Shaw",
+    "quote": "If you cannot get rid of the family skeleton, you may as well make it dance."
+  },
+  {
+    "id": "f6k2s8b3",
+    "author": "George Burns",
+    "quote": "Happiness is having a large, loving, caring, close-knit family in another city."
+  },
+  {
+    "id": "w1m7h3z8",
+    "author": "George Carlin",
+    "quote": "Frisbeetarianism is the belief that when you die, your soul goes up on the roof and gets stuck."
+  },
+  {
+    "id": "u3d8q6v2",
+    "author": "Groucho Marx",
+    "quote": "A child of five would understand this. Send someone to fetch a child of five."
+  },
+  {
+    "id": "c8h4n1k6",
+    "author": "Hedy Lamarr",
+    "quote": "Any girl can be glamorous. All you have to do is stand still and look stupid."
+  },
+  {
+    "id": "y1p9x3m5",
+    "author": "Henny Youngman",
+    "quote": "If you're going to do something tonight that you'll be sorry for tomorrow morning, sleep late."
+  },
+  {
+    "id": "h3v1d7s9",
+    "author": "Henry A. Kissinger",
+    "quote": "There cannot be a crisis next week. My schedule is already full."
+  },
+  {
+    "id": "s9k5b2q4",
+    "author": "Herb Caen",
+    "quote": "I have a memory like an elephant. I remember every elephant I've ever met."
+  },
+  {
+    "id": "j2m6z8h1",
+    "author": "Hillary Clinton",
+    "quote": "If I want to knock a story off the front page, I just change my hairstyle."
+  },
+  {
+    "id": "r5c9v7k3",
+    "author": "Isaac Asimov",
+    "quote": "People who think they know everything are a great annoyance to those of us who do."
+  },
+  {
+    "id": "t8x4n2d6",
+    "author": "Jane Wagner",
+    "quote": "All my life, I always wanted to be somebody. Now I see that I should have been more specific."
+  },
+  {
+    "id": "x6h2k9p1",
+    "author": "Jane Wagner",
+    "quote": "When we talk to God, we're praying. When God talks to us, we're schizophrenic."
+  },
+  {
+    "id": "v1d7m3z9",
+    "author": "Jerry Seinfeld",
+    "quote": "It's amazing that the amount of news that happens in the world every day always just exactly fits the newspaper."
+  },
+  {
+    "id": "g4k8s1c7",
+    "author": "Jim Carrey",
+    "quote": "Behind every great man is a woman rolling her eyes."
+  },
+  {
+    "id": "a9n3x5h2",
+    "author": "Joan Rivers",
+    "quote": "I knew I was an unwanted baby when I saw that my bath toys were a toaster and a radio."
+  },
+  {
+    "id": "d1p6v8m4",
+    "author": "Joey Adams",
+    "quote": "Do not worry about avoiding temptation. As you grow older it will avoid you."
+  },
+  {
+    "id": "l4c2k7z8",
+    "author": "Josh Billings",
+    "quote": "There's a great power in words, if you don't hitch too many of them together."
+  },
+  {
+    "id": "e7m9h1q5",
+    "author": "Josh Billings",
+    "quote": "Flattery is like cologne water, to be smelt, not swallowed."
+  },
+  {
+    "id": "i1v5d3x7",
+    "author": "Katharine Hepburn",
+    "quote": "Life is hard. After all, it kills you."
+  },
+  {
+    "id": "o6k4s9b2",
+    "author": "Lana Turner",
+    "quote": "A successful man is one who makes more money than his wife can spend. A successful woman is one who can find such a man."
+  },
+  {
+    "id": "k2h8m4p9",
+    "author": "Laurence J. Peter",
+    "quote": "If two wrongs don't make a right, try three."
+  },
+  {
+    "id": "q9d1v6n3",
+    "author": "Laurence J. Peter",
+    "quote": "Originality is the fine art of remembering what you hear but forgetting where you heard it."
+  },
+  {
+    "id": "m3x7k2h6",
+    "author": "Laurence J. Peter",
+    "quote": "If a cluttered desk is the sign of a cluttered mind, what is the significance of a clean desk?"
+  },
+  {
+    "id": "b5p9c1v8",
+    "author": "Lenny Bruce",
+    "quote": "Miami Beach is where neon goes to die."
+  },
+  {
+    "id": "z7m2h6k1",
+    "author": "Lily Tomlin",
+    "quote": "I always wanted to be somebody, but now I realize I should have been more specific."
+  },
+  {
+    "id": "p1k9d3x4",
+    "author": "Luis Bunuel",
+    "quote": "Age is something that doesn't matter, unless you are a cheese."
+  },
+  {
+    "id": "n6v4m8q2",
+    "author": "Mae West",
+    "quote": "Between two evils, I always pick the one I never tried before."
+  },
+  {
+    "id": "f2h1k7z3",
+    "author": "Margaret Mead",
+    "quote": "Always remember that you are absolutely unique. Just like everyone else."
+  },
+  {
+    "id": "w4d8c2n9",
+    "author": "Mark Twain",
+    "quote": "Get your facts first, then you can distort them as you please."
+  },
+  {
+    "id": "u7k3m1h5",
+    "author": "Mark Twain",
+    "quote": "Go to Heaven for the climate, Hell for the company."
+  },
+  {
+    "id": "c1x5v9p6",
+    "author": "Mark Twain",
+    "quote": "All generalizations are false, including this one."
+  },
+  {
+    "id": "y8m4k2d1",
+    "author": "Mel Brooks",
+    "quote": "If God wanted us to fly, He would have given us tickets."
+  },
+  {
+    "id": "h2v9b5q7",
+    "author": "Milton Berle",
+    "quote": "A committee is a group that keeps minutes and loses hours."
+  },
+  {
+    "id": "s5d1k8x3",
+    "author": "Milton Berle",
+    "quote": "We owe a lot to Thomas Edison - if it wasn't for him, we'd be watching television by candlelight."
+  },
+  {
+    "id": "j8k2m6h4",
+    "author": "Mitch Hedberg",
+    "quote": "My fake plants died because I did not pretend to water them."
+  },
+  {
+    "id": "r2m8x4p1",
+    "author": "Oliver Herford",
+    "quote": "A woman's mind is cleaner than a man's: She changes it more often."
+  },
+  {
+    "id": "t6h3k9v2",
+    "author": "Oscar Levant",
+    "quote": "Roses are red, violets are blue, I'm schizophrenic, and so am I."
+  },
+  {
+    "id": "x1d7m5z9",
+    "author": "Oscar Wilde",
+    "quote": "I can resist everything except temptation."
+  },
+  {
+    "id": "v9k1c3h6",
+    "author": "P. J. O'Rourke",
+    "quote": "Cleanliness becomes more important when godliness is unlikely."
+  },
+  {
+    "id": "g3m7x9p2",
+    "author": "Paul Simon",
+    "quote": "I was eating in a Chinese restaurant downtown. There was a dish called Mother and Child Reunion. It's chicken and eggs. And I said, I gotta use that one."
+  },
+  {
+    "id": "a2h4v8k9",
+    "author": "Phyllis Diller",
+    "quote": "The only time I ever enjoyed ironing was the day I accidentally got gin in the steam iron."
+  },
+  {
+    "id": "d9k6m2x1",
+    "author": "Red Skelton",
+    "quote": "Any kid will run any errand for you, if you ask at bedtime."
+  },
+  {
+    "id": "l1v3d7z5",
+    "author": "Richard Dawkins",
+    "quote": "By all means let's be open-minded, but not so open-minded that our brains drop out."
+  },
+  {
+    "id": "e6m1k3q8",
+    "author": "Robert Benchley",
+    "quote": "Drawing on my fine command of the English language, I said nothing."
+  },
+  {
+    "id": "i8d2v6h3",
+    "author": "Robert Byrne",
+    "quote": "Until you walk a mile in another man's moccasins you can't imagine the smell."
+  },
+  {
+    "id": "o3k7x1m9",
+    "author": "Robin Williams",
+    "quote": "I'm sorry, if you were right, I'd agree with you."
+  },
+  {
+    "id": "k7h5d9v1",
+    "author": "Robin Williams",
+    "quote": "Why do they call it rush hour when nothing moves?"
+  },
+  {
+    "id": "q4m9k1x2",
+    "author": "Rodney Dangerfield",
+    "quote": "I haven't spoken to my wife in years. I didn't want to interrupt her."
+  },
+  {
+    "id": "m9v2d4h6",
+    "author": "Rodney Dangerfield",
+    "quote": "I found there was only one way to look thin: hang out with fat people."
+  },
+  {
+    "id": "b1k3x7p4",
+    "author": "Rodney Dangerfield",
+    "quote": "I looked up my family tree and found out I was the sap."
+  },
+  {
+    "id": "z5d7m1h8",
+    "author": "Ron White",
+    "quote": "I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party."
+  },
+  {
+    "id": "p9h1k2v7",
+    "author": "Samuel Johnson",
+    "quote": "One of the disadvantages of wine is that it makes a man mistake words for thoughts."
+  },
+  {
+    "id": "n2m6x8d3",
+    "author": "Spike Milligan",
+    "quote": "A sure cure for seasickness is to sit under a tree."
+  },
+  {
+    "id": "f8k4v2h1",
+    "author": "Steve Martin",
+    "quote": "A day without sunshine is like, you know, night."
+  },
+  {
+    "id": "w3d9m7x5",
+    "author": "Steve Martin",
+    "quote": "Boy, those French: they have a different word for everything!"
+  },
+  {
+    "id": "u1h3k9v8",
+    "author": "Terry Pratchett",
+    "quote": "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
+  },
+  {
+    "id": "c9m1d5x2",
+    "author": "Theodore Roosevelt",
+    "quote": "If you could kick the person in the pants responsible for most of your trouble, you wouldn't sit for a month."
+  },
+  {
+    "id": "y3k7v9h4",
+    "author": "Thomas A. Edison",
+    "quote": "The chief function of the body is to carry the brain around."
+  },
+  {
+    "id": "h7d3m1k2",
+    "author": "Thomas Sowell",
+    "quote": "It takes considerable knowledge just to realize the extent of your own ignorance."
+  },
+  {
+    "id": "s1v9x3d4",
+    "author": "Thor Heyerdahl",
+    "quote": "Progress is man's ability to complicate simplicity."
+  },
+  {
+    "id": "j5k1m9h7",
+    "author": "W. H. Auden",
+    "quote": "We are all here on earth to help others; what on earth the others are here for I don't know."
+  },
+  {
+    "id": "r7m5x1k3",
+    "author": "Walt Disney",
+    "quote": "I love Mickey Mouse more than any woman I have ever known."
+  },
+  {
+    "id": "t3h7d9v6",
+    "author": "Will Rogers",
+    "quote": "Be thankful we're not getting all the government we're paying for."
+  },
+  {
+    "id": "x8k2m4h9",
+    "author": "William Feather",
+    "quote": "If you're naturally kind, you attract a lot of people you don't like."
+  },
+  {
+    "id": "v6d4x2k1",
+    "author": "Wilson Mizner",
+    "quote": "Gambling: The sure way of getting nothing for something."
+  },
+  {
+    "id": "g1m9k7h5",
+    "author": "Winston Churchill",
+    "quote": "I may be drunk, Miss, but in the morning I will be sober and you will still be ugly."
+  },
+  {
+    "id": "a5h9d3v2",
+    "author": "Woody Allen",
+    "quote": "I failed to make the chess team because of my height."
+  },
+  {
+    "id": "d3k1x9m8",
+    "author": "Yogi Berra",
+    "quote": "I never said most of the things I said."
+  },
+  {
+    "id": "l8v2m6h4",
+    "author": "Yogi Berra",
+    "quote": "Even Napoleon had his Watergate."
+  },
+  {
+    "id": "e2m4k8d7",
+    "author": "Steve Jobs",
+    "quote": "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it"
+  },
+  {
+    "id": "i6k8v4h2",
+    "author": "Steve Jobs",
+    "quote": "You can't just ask customers what they want and then try to give that to them. By the time you get it built, they'll want something new"
+  },
+  {
+    "id": "o4d2m8x6",
+    "author": "Steve Jobs",
+    "quote": "Stay hungry. Stay foolish"
+  }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Quotes</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="quotes-section">
+        <p class="error-message dn" role="alert"></p>
+        <h1 class="header">Favorite Quotes</h1>
+        <div class="quote-wrapper">
+          <p class="quote-text">Click "Generate quote", please</p>
+          <p class="quote-author">and you'll see the magic!</p>
+        </div>
+        <div class="btns-wrapper">
+          <button class="btn primary-btn generate-btn">Generate quote</button>
+          <button class="btn secondary-btn dn favorite-btn">
+            <svg class="favorite-icon" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.9873 3.45801C6.20325 1.39713 9.93428 1.49377 12.2773 3.92578L14.5566 6.2959L15.999 7.7959L17.4404 6.2959L19.7168 3.92773C21.9861 1.57263 25.5602 1.40592 27.8008 3.27246L28.0127 3.45996C29.2397 4.60079 29.9476 6.16456 29.9971 7.89355C30.0435 9.6238 29.4216 11.2294 28.2598 12.4375L16 25.1797L3.73926 12.4375L3.73828 12.4365L3.52637 12.2051C2.49983 11.0274 1.95768 9.51499 2.00293 7.89062V7.88965C2.04704 6.27335 2.67125 4.7972 3.76172 3.67871L3.98633 3.45996L3.9873 3.45801Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="favorite-section dn">
+        <h2 class="header">Your favorite quotes</h2>
+        <ul class="cards-wrapper">
+          <!-- <li class="fav-card"></li> -->
+        </ul>
+      </section>
+    </main>
+    <script type="module" src="./App.js"></script>
+  </body>
+</html>

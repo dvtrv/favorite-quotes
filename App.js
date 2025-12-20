@@ -1,44 +1,41 @@
-import QuotesService from './src/QuotesService.js';
-import QuotesView from './src/QuotesView.js';
+import ServiceQuotes from "./src/ServiceQuotes.js";
+import ViewQuotes from "./src/ViewQuotes.js";
 
 class App {
   constructor() {
-    this.service = new QuotesService('./quotes.json');
-    this.view = new QuotesView();
-    this.view.onFavorite(() => this.handleFavorite());
-    this.view.onGenerate(() => this.handleGenerate());
-    this.view.onDeleteFavorite((quoteId) => this.handleDeleteFavorite(quoteId));
+    this.service = new ServiceQuotes();
+    this.view = new ViewQuotes();
+    this.view.bindBtn(() => this.handlerOnGenerate(), this.view.btnGenerate);
+    this.view.bindBtn(() => this.handlerOnFavorite(), this.view.btnFavorite);
+    this.view.deleteFavorite((quoteId) => this.handlerOnDelete(quoteId));
+    this.init();
   }
 
-  async handleGenerate() {
-    try {
-      await this.service.load();
-      this.view.setHidden(true);
-
-      setTimeout(() => {
-        this.view.showQuote(this.service.getRandom());
-        this.view.setHidden(false);
-        this.updateFavoritesUI();
-      }, 400);
-    } catch (error) {
-      this.view.showError(error);
-    }
+  async init() {
+    await this.service.load();
+    this.view.renderNewQuote(this.service.qurrentQuote);
+    this.updateUI();
   }
 
-  handleFavorite() {
+  async handlerOnGenerate() {
+    await this.service.setQurrentQuote();
+    this.view.renderNewQuote(this.service.qurrentQuote);
+    this.updateUI();
+  }
+
+  handlerOnFavorite() {
     this.service.toggleFavorite();
-    this.updateFavoritesUI();
+    this.updateUI();
   }
 
-  handleDeleteFavorite(quoteId) {
-    this.service.removeFavoriteById(quoteId);
-    this.updateFavoritesUI();
+  handlerOnDelete(quoteId) {
+    this.service.deleteFavoriteById(quoteId);
+    this.updateUI();
   }
 
-  updateFavoritesUI() {
-    this.view.renderFavoriteList(this.service.getFavorites());
-    this.view.switchFavoriteBtn(this.service.isFavoriteIcon());
-    this.view.renderFavoriteElements(this.service.isFavoriteElements());
+  updateUI() {
+    this.view.renderFavorites(this.service.favorites);
+    this.view.toggleFavoriteBtnIcon(this.service.isFavorite());
   }
 }
 

@@ -1,14 +1,34 @@
 export default class ServiceQuotes {
   constructor() {
+    this.appVersion = "0.2.1-alfa";
+    this.appState = {};
     this.apiURL = "https://dummyjson.com/quotes/random";
     // this.apiURL ='https://quoteslate.vercel.app/api/quotes/random';
-
-    this.qurrentQuote = null;
+    this.currentQuote = null;
     this.favorites = [];
   }
 
   async load() {
-    await this.setQurrentQuote();
+    await this.loadAppState();
+  }
+
+  saveAppState() {
+    this.appState.version = this.appVersion;
+    this.appState.favorites = this.favorites;
+    this.appState.currentQuote = this.currentQuote;
+    localStorage.setItem("quotesAppState", JSON.stringify(this.appState));
+  }
+
+  async loadAppState() {
+    const savedState = localStorage.getItem("quotesAppState");
+    if (savedState) {
+      this.appState = JSON.parse(savedState);
+      this.currentQuote = this.appState.currentQuote;
+      this.favorites = Array.isArray(this.appState.favorites) ? this.appState.favorites : [];
+    } else {
+      await this.setCurrentQuote();
+      this.saveAppState();
+    }
   }
 
   async fetchData() {
@@ -22,14 +42,14 @@ export default class ServiceQuotes {
     }
   }
 
-  async setQurrentQuote() {
-    this.qurrentQuote = await this.fetchData();
+  async setCurrentQuote() {
+    this.currentQuote = await this.fetchData();
   }
 
   toggleFavorite() {
-    const index = this.favorites.indexOf(this.qurrentQuote);
+    const index = this.favorites.indexOf(this.currentQuote);
     if (index === -1) {
-      this.favorites.push(this.qurrentQuote);
+      this.favorites.push(this.currentQuote);
     } else {
       this.favorites.splice(index, 1);
     }
@@ -43,6 +63,6 @@ export default class ServiceQuotes {
   }
 
   isFavorite() {
-    return this.favorites.includes(this.qurrentQuote);
+    return this.favorites.includes(this.currentQuote);
   }
 }

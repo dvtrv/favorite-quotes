@@ -13,24 +13,27 @@ class App {
 
   async init() {
     await this.service.load();
-    this.view.renderNewQuote(this.service.qurrentQuote);
+    this.view.renderNewQuote(this.service.currentQuote);
     this.updateUI();
   }
 
   async handlerOnGenerate() {
-    await this.service.setQurrentQuote();
-    this.view.renderNewQuote(this.service.qurrentQuote);
+    await this.service.setCurrentQuote();
+    this.view.renderNewQuote(this.service.currentQuote);
     this.updateUI();
+    this.service.saveAppState();
   }
 
   handlerOnFavorite() {
     this.service.toggleFavorite();
     this.updateUI();
+    this.service.saveAppState();
   }
 
   handlerOnDelete(quoteId) {
     this.service.deleteFavoriteById(quoteId);
     this.updateUI();
+    this.service.saveAppState();
   }
 
   updateUI() {

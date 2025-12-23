@@ -1,5 +1,6 @@
 export default class ViewQuotes {
   constructor() {
+    this.currentQuteSection = document.querySelector(".quotes__item");
     this.currentQuoteId = document.querySelector(".current-quote__id");
     this.currentQuoteText = document.querySelector(".current-quote__text");
     this.currentQuoteAuthor = document.querySelector(".current-quote__author");
@@ -57,15 +58,19 @@ export default class ViewQuotes {
     });
   }
 
-  renderErrorMessage(message) {
-    this.errorMessage.textContent = message;
-  }
-
   bindBtn(handler, btn) {
     btn.addEventListener("click", handler);
   }
 
   toggleFavoriteBtnIcon(isFavorite) {
     this.btnFavorite.classList.toggle("is-favorite", isFavorite);
+  }
+
+  renderErrorMsg(error) {
+    this.currentQuoteId.textContent = `Type: ${error.name}`;
+    this.currentQuoteText.textContent = error.message;
+    this.currentQuoteAuthor.textContent = "Check connection and try again, please.";
+    this.currentQuteSection.classList.toggle("item-state__error", true);
+    this.btnFavorite.classList.toggle("is-hidden", true);
   }
 }

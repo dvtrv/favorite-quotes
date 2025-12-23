@@ -18,10 +18,15 @@ class App {
   }
 
   async handlerOnGenerate() {
-    await this.service.setCurrentQuote();
-    this.view.renderNewQuote(this.service.currentQuote);
-    this.updateUI();
-    this.service.saveAppState();
+    try {
+      await this.service.setCurrentQuote();
+      this.view.renderNewQuote(this.service.currentQuote);
+      this.updateUI();
+      this.service.saveAppState();
+    } catch (error) {
+      this.view.renderErrorMsg(error);
+      console.log(error);
+    }
   }
 
   handlerOnFavorite() {

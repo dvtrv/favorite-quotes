@@ -1,6 +1,6 @@
 export default class ServiceQuotes {
   constructor() {
-    this.appVersion = "0.2.1-alfa";
+    this.appVersion = "0.2.2-alfa";
     this.appState = {};
     this.apiURL = "https://dummyjson.com/quotes/random";
     // this.apiURL ='https://quoteslate.vercel.app/api/quotes/random';
@@ -9,7 +9,11 @@ export default class ServiceQuotes {
   }
 
   async load() {
-    await this.loadAppState();
+    try {
+      await this.loadAppState();
+    } catch (error) {
+      throw new Error(`Loading state: ${error.message}.`);
+    }
   }
 
   saveAppState() {
@@ -34,11 +38,10 @@ export default class ServiceQuotes {
   async fetchData() {
     try {
       const response = await fetch(this.apiURL);
-      if (!response.ok) throw new Error(`Response rejected: ${response.status}`);
+      if (!response.ok) throw new Error(response.status);
       return await response.json();
     } catch (error) {
-      console.log(error.message);
-      throw new Error(`Error when fetching data. Error: ${error.message}`);
+      throw new Error(`Fetching data: ${error.message}.`);
     }
   }
 

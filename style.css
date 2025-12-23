@@ -17,7 +17,7 @@
     --color-link: #787888;
     --color-link-hover: #9d9db2;
 
-    --color-error: #741616;
+    --color-error: #240c0c;
     --color-scroll-thumb: #787888;
     --color-scroll-track: #131313;
 
@@ -254,6 +254,10 @@ body {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+}
+
+.item-state__error {
+    background-color: var(--color-error);
 }
 
 .quotes__content {
